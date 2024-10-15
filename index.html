@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NFT E-commerce Shop</title>
+    <title>Marketplace NFT</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,59 +32,89 @@
         <aside class="filters">
             <h3>Filters</h3>
             <div>
-                <label for="category">Category</label>
-                <select id="category">
-                    <option value="all">All</option>
+                <label for="category-filter">Category</label>
+                <select id="category-filter">
+                    <option value="all-categories">All Categories</option>
                     <option value="crypto">Crypto</option>
                     <option value="artwork">Artwork</option>
                 </select>
             </div>
             <div>
-                <label for="price-range">Price Range: <span id="price-value"></span></label>
-                <input type="range" id="price-range" min="0" max="1000" step="10">
+                <label for="price-range">Price Range: <span id="price-display">$100</span></label>
+                <input type="range" class="price-slider" id="price-range" min="0" max="1000" step="100">
             </div>
         </aside>
 
         <div class="products-grid" id="products-grid">
-            <article class="product" data-category="crypto" data-price="500">
-                <img src="asset/monkey1.jpg" alt="Monkey 1">
-                <h2>Monkey 1</h2>
-                <p>$500 (0.15 ETH)</p>
-                <button>Add to Cart</button>
-            </article>
-            <article class="product" data-category="crypto" data-price="600">
-                <img src="asset/monkey2.jpg" alt="Monkey 2">
-                <h2>Monkey 2</h2>
-                <p>$600 (0.18 ETH)</p>
-                <button>Add to Cart</button>
-            </article>
-            <article class="product" data-category="crypto" data-price="700">
-                <img src="asset/monkey3.jpg" alt="Monkey 3">
-                <h2>Monkey 3</h2>
-                <p>$700 (0.21 ETH)</p>
-                <button>Add to Cart</button>
-            </article>
-            <article class="product" data-category="crypto" data-price="300">
-                <img src="asset/monkey4.jpg" alt="Monkey 4">
-                <h2>Monkey 4</h2>
-                <p>$300 (0.09 ETH)</p>
-                <button>Add to Cart</button>
-            </article>
-            <article class="product" data-category="crypto" data-price="800">
-                <img src="asset/monkey5.jpg" alt="Monkey 5">
-                <h2>Monkey 5</h2>
-                <p>$800 (0.24 ETH)</p>
-                <button>Add to Cart</button>
-            </article>
-            <article class="product" data-category="crypto" data-price="900">
-                <img src="asset/monkey6.jpg" alt="Monkey 6">
-                <h2>Monkey 6</h2>
-                <p>$900 (0.27 ETH)</p>
-                <button>Add to Cart</button>
-            </article>
+            <!-- NFT 1 -->
+            <div class="product-card crypto" data-price="500">
+                <img src="asset/monkey1.jpg" alt="Monkey 1" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-name">Monkey 1</h3>
+                    <p class="product-price">$500 (0.15 ETH)</p>
+                    <button class="favorite">❤️</button>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <!-- NFT 2 -->
+            <div class="product-card crypto" data-price="600">
+                <img src="asset/monkey2.jpg" alt="Monkey 2" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-name">Monkey 2</h3>
+                    <p class="product-price">$600 (0.18 ETH)</p>
+                    <button class="favorite">❤️</button>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <!-- NFT 3 -->
+            <div class="product-card crypto" data-price="700">
+                <img src="asset/monkey3.jpg" alt="Monkey 3" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-name">Monkey 3</h3>
+                    <p class="product-price">$700 (0.21 ETH)</p>
+                    <button class="favorite">❤️</button>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <!-- NFT 4 -->
+            <div class="product-card crypto" data-price="300">
+                <img src="asset/monkey4.jpg" alt="Monkey 4" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-name">Monkey 4</h3>
+                    <p class="product-price">$300 (0.09 ETH)</p>
+                    <button class="favorite">❤️</button>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <!-- NFT 5 -->
+            <div class="product-card crypto" data-price="800">
+                <img src="asset/monkey5.jpg" alt="Monkey 5" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-name">Monkey 5</h3>
+                    <p class="product-price">$800 (0.24 ETH)</p>
+                    <button class="favorite">❤️</button>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+
+            <!-- NFT 6 -->
+            <div class="product-card crypto" data-price="900">
+                <img src="asset/monkey6.jpg" alt="Monkey 6" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-name">Monkey 6</h3>
+                    <p class="product-price">$900 (0.27 ETH)</p>
+                    <button class="favorite">❤️</button>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Pagination section -->
     <section class="pagination">
         <ul>
             <li><a href="#">1</a></li>
