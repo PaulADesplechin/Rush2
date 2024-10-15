@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NFT E-commerce Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+                <ul class="menu-items" id="menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Magazine</a></li>
+                </ul>
+            </div>
+            <div class="cart-login">
+                <a href="#" class="cart">🛒</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="search-bar">
+        <input type="text" placeholder="Search for NFTs" id="search-input">
+    </section>
+
+    <section class="filters-products">
+        <aside class="filters">
+            <h3>Filters</h3>
+            <div>
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="crypto">Crypto</option>
+                    <option value="artwork">Artwork</option>
+                </select>
+            </div>
+            <div>
+                <label for="price-range">Price Range: <span id="price-value"></span></label>
+                <input type="range" id="price-range" min="0" max="1000" step="10">
+            </div>
+        </aside>
+
+        <div class="products-grid" id="products-grid">
+            <article class="product" data-category="crypto" data-price="500">
+                <img src="asset/monkey1.jpg" alt="Monkey 1">
+                <h2>Monkey 1</h2>
+                <p>$500 (0.15 ETH)</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product" data-category="crypto" data-price="600">
+                <img src="asset/monkey2.jpg" alt="Monkey 2">
+                <h2>Monkey 2</h2>
+                <p>$600 (0.18 ETH)</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product" data-category="crypto" data-price="700">
+                <img src="asset/monkey3.jpg" alt="Monkey 3">
+                <h2>Monkey 3</h2>
+                <p>$700 (0.21 ETH)</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product" data-category="crypto" data-price="300">
+                <img src="asset/monkey4.jpg" alt="Monkey 4">
+                <h2>Monkey 4</h2>
+                <p>$300 (0.09 ETH)</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product" data-category="crypto" data-price="800">
+                <img src="asset/monkey5.jpg" alt="Monkey 5">
+                <h2>Monkey 5</h2>
+                <p>$800 (0.24 ETH)</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product" data-category="crypto" data-price="900">
+                <img src="asset/monkey6.jpg" alt="Monkey 6">
+                <h2>Monkey 6</h2>
+                <p>$900 (0.27 ETH)</p>
+                <button>Add to Cart</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="pagination">
+        <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
